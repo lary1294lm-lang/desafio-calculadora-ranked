@@ -1,7 +1,9 @@
+// Função para calcular o nível com base nas vitórias e derrotas
 function calculoPartidas(vitorias, derrotas) {
     const saldoVitorias = vitorias - derrotas;
         let nivel;
 
+// Determina o nível com base no saldo de vitórias
     if (saldoVitorias < 10) {
         nivel = "Ferro";
     } else if (saldoVitorias >= 10 && saldoVitorias <=20) {
@@ -17,5 +19,7 @@ function calculoPartidas(vitorias, derrotas) {
     } else { 
         nivel = "Imortal";
     }
-    console.log('O Herói tem saldo de ${saldoVitorias} está no nível de ${nivel} ');
+
+   // Exibe o resultado  
+ console.log('O Herói tem saldo de ${saldoVitorias} está no nível de ${nivel} ');
 } 
